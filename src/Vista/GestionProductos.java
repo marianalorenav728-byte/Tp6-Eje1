@@ -1,6 +1,8 @@
 
-package tp6eje1;
+package Vista;
 
+import Entidades.Categoria;
+import Entidades.Producto;
 import javax.swing.table.DefaultTableModel;
 
 
@@ -65,6 +67,7 @@ public class GestionProductos extends javax.swing.JFrame {
         lbPrecio.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         lbPrecio.setText("Precio:");
 
+        btAgregar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8-carrito-de-compras-48_1.png"))); // NOI18N
         btAgregar.setText("Agregar");
         btAgregar.addActionListener(this::btAgregarActionPerformed);
 
@@ -84,8 +87,8 @@ public class GestionProductos extends javax.swing.JFrame {
                     .addComponent(txPrecio)
                     .addComponent(jCbCategoria, 0, 117, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
-                .addComponent(btAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addComponent(btAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(19, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -108,6 +111,7 @@ public class GestionProductos extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8-producto-50.png"))); // NOI18N
         jLabel2.setText("Gestion de Productos");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -125,7 +129,7 @@ public class GestionProductos extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(19, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel2)
                 .addGap(18, 18, 18)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
