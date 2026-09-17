@@ -151,7 +151,7 @@ public class GestionProductos extends javax.swing.JFrame {
         String precioStr = txPrecio.getText().trim();
         String categoria = (String) jCbCategoria.getSelectedItem();
         // 2. Validar campos vacíos
-        if (nombre.isEmpty() || precioStr.isEmpty()) {
+        if (nombre.isEmpty() || precioStr.isEmpty() || jCbCategoria.getSelectedIndex()==-1) {
             javax.swing.JOptionPane.showMessageDialog(this,
                     "Por favor, complete todos los campos.",
                     "Error",
